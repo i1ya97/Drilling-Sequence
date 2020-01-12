@@ -1,0 +1,18 @@
+<div>
+  <label>
+    <p>Ширина <input type="text" (input)="inputWidth($event)" [value]="width"></p>
+  </label>
+  <label>
+    <p>Высота <input type="text" (input)="inputHeight($event)" [value]="height"></p>
+  </label>
+</div>
+<svg width="800" height="800" >
+  <rect x="100" y="100" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="200" y="200" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="300" y="300" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="400" y="400" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="400" y="100" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="300" y="200" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="200" y="300" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+  <rect x="100" y="400" attr.width="{{width}}" attr.height="{{height}}" stroke="black" fill="transparent" stroke-width="5"/>
+</svg>
