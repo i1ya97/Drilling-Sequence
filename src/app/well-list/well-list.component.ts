@@ -6,22 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./well-list.component.css']
 })
 export class WellListComponent {
-  colorBlur = '#6496f0';
-  colorRed = '#f08080';
-  colorGray = '#aaaaaa';
-  positionY = 0;
   height = 15;
+  colorYellow = '#ffa500';
+  colorBlue = '#6495ed';
+  colorGray = '#aaaaaa';
+  colorDark = '#696969';
+  colorRed = '#f08080';
+  positionY = 0;
   items  = [
-    {oneX: 500, oneWidth: 50, twoX: 550, twoWidth: 20, threeX: 570, threeWidth: 280, name: 'CY_k116'
-      , interval: 'N/A', type: 'N/A', RRSU: 212, oil: 280, rate: 1500, WC : 81.1},
-    {oneX: 600, oneWidth: 50, twoX: 650, twoWidth: 40, threeX: 690, threeWidth: 280, name: 'CY_k111'
-      , interval: 'N/A', type: 'N/A', RRSU: 212, oil: 217.5, rate: 1675, WC : 87},
-    {oneX: 750, oneWidth: 50, twoX: 800, twoWidth: 20, threeX: 820, threeWidth: 280, name: 'CY_k117'
-      , interval: 'N/A', type: 'N/A', RRSU: 212, oil: 150, rate: 800, WC : 81.2},
-    {oneX: 850, oneWidth: 100, twoX: 950, twoWidth: 20, threeX: 970, threeWidth: 220, name: 'CY_k118'
-      , interval: 'N/A', type: 'N/A', RRSU: 212, oil: 300, rate: 600, WC : 50}
+    {NKX: 850, NKWidth: 10, PX: 900, PWidth: 40, hookupX: 1020, hookupWidth: 60, fracX: 1150, fracWidth: 60
+      , name: '01 US-24062', interval: '5m', type: 'Prod.', RRSU: 64, oil: 40, rate: 100, WC : 60},
+    {NKX: 850, NKWidth: 10, PX: 860, PWidth: 20, hookupX: 1020, hookupWidth: 60, fracX: 1225, fracWidth: 35
+      , name: '02 US-24072', interval: '10m', type: 'Inj.', RRSU: 81, oil: 20, rate: 250, WC : 100},
+    {NKX: 860, NKWidth: 10, PX: 900, PWidth: 40, hookupX: 1020, hookupWidth: 60, fracX: 1135, fracWidth: 40
+      , name: '03 US-3028', interval: '15m', type: 'W/S', RRSU: 42, oil: 'N/A', rate: 1200, WC : 100},
+    {NKX: 880, NKWidth: 10, PX: 900, PWidth: 40, hookupX: 1020, hookupWidth: 60, fracX: 1095, fracWidth: 35
+      , criticalX: 950, criticalWidth: 20
+      , name: '04 US-24061', interval: '20m', type: 'Prod.', RRSU: 25, oil: 157.5, rate: 225, WC : 30}
   ];
 
   constructor() { }
-
 }
