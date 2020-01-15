@@ -1,5 +1,6 @@
-
-  <svg width="1600" height="40" xmlns="http://www.w3.org/2000/svg" *ngFor="let item of items">
+<div *ngFor="let item of items">
+    <input type="checkbox" [checked]="item['hide']" (change)="onChange(item.id)">
+  <svg width="1600" height="40" xmlns="http://www.w3.org/2000/svg">
     <text x="0" y="12" style=" font-size: 14px;">{{ item['name'] }}</text>
     <text x="170" y="12" style=" font-size: 14px;">{{ item['interval'] }}</text>
     <text x="220" y="12" style=" font-size: 14px;">{{ item['type'] }}</text>
@@ -12,4 +13,6 @@
     <rect attr.x="{{ item['criticalX'] }}" attr.y="{{positionY}}" attr.width="{{ item['criticalWidth'] }}" attr.height="{{height}}" attr.fill="{{colorRed}}" stroke-width="1"/>
     <rect attr.x="{{ item['finalX'] }}" attr.y="{{positionY}}" attr.width="{{ item['finalWidth'] }}" attr.height="{{height}}" attr.fill="{{colorGray}}" stroke-width="1"/>
   </svg>
+  <app-well-list *ngIf="item['hide']"></app-well-list>
+</div>
 
